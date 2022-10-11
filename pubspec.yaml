@@ -84,6 +84,9 @@ flutter:
    - family: Signika-Regular
      fonts:
        - asset: resources/fonts/Signika-Regular.ttf
+   - family: Signika-SemiBold
+     fonts:
+       - asset: resources/fonts/Signika-SemiBold.ttf
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
