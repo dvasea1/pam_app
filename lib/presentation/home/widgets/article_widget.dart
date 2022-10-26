@@ -7,10 +7,10 @@ import 'package:test_2/resources/text_styles.dart';
 import '../../../resources/strings.dart';
 
 class ArticleWidget extends StatelessWidget {
-  const ArticleWidget({super.key, required this.articleTitle, required this.icon});
+  const ArticleWidget({super.key, required this.articleTitle, required this.iconUrl});
 
   final String articleTitle;
-  final SvgPicture icon;
+  final String iconUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -84,9 +84,9 @@ class ArticleWidget extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Container(
-              child: icon,
-            ),
+            child: Container(height: 160,child: Image(
+              image: NetworkImage(iconUrl),
+            ),),
           ),
         ],
       ),

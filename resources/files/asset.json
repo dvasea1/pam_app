@@ -1,0 +1,24 @@
+{
+  "user": {
+    "user_name": "john",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@gmail.com"
+  },
+  "articles": [
+    {
+      "title": "The pros and cons of food",
+      "image_cover": "https://img.freepik.com/premium-photo/big-hamburger-with-double-beef-french-fries_252907-8.jpg?w=2000",
+      "description": "Lorem ipsun Lorem ipsunLorem ipsunLorem ipsunLorem ipsunLorem ipsunLorem ipsun"
+    },
+    {
+      "title": "About food",
+      "image_cover": "https://www.sport-passion.fr/pictures/aliments-booster-de-performance.jpg",
+      "description": "Lorem ipsun Lorem ipsunLorem ipsunLorem ipsunLorem ipsunLorem ipsunLorem ipsun"
+    }, {
+      "title": "Sport and food",
+      "image_cover": "https://blog.nasm.org/hubfs/sports-nutrition-guide.jpg",
+      "description": "Lorem ipsun Lorem ipsunLorem ipsunLorem ipsunLorem ipsunLorem ipsunLorem ipsun"
+    }
+  ]
+}

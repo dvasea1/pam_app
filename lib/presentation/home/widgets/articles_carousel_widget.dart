@@ -39,7 +39,7 @@ class ArticlesCarouselWidgetState extends State<ArticlesCarouselWidget> {
                 var item = widget.articles[index];
                 return ArticleWidget(
                   articleTitle: item.title,
-                  icon: item.icon,
+                  iconUrl: item.iconUrl,
                 );
               },
               itemCount: widget.articles.length,
