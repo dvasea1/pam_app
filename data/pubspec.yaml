@@ -10,6 +10,7 @@ dependencies:
   domain:
     path: ../domain
   json_annotation:
+  http:
 #   path: ^1.8.0
 
 dev_dependencies:

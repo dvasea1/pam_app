@@ -6,9 +6,8 @@ abstract class UserJsonAssetSource {
 
 class UserJsonAssetSourceImpl extends UserJsonAssetSource {
   @override
-  Future<List<UserApiDto>> getUsers() {
-    // TODO: implement getUsers
-    throw UnimplementedError();
+  Future<List<UserApiDto>> getUsers() async {
+    return [];
   }
 
 }

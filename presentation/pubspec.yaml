@@ -34,9 +34,12 @@ dependencies:
 
   domain:
     path: ../domain
+  di:
+    path: ../di
   get:
   flutter_svg:
-  http:
+  get_it:
+
   shared_preferences: ^2.0.15
   drift: ^2.2.0
   sqlite3_flutter_libs: 0.5.6

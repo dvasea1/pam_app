@@ -8,6 +8,7 @@ class GetUsersUseCase {
   GetUsersUseCase(this.userRepository);
 
   Future<List<SmallUser>> call() {
-    return userRepository.getUsers();
+    print('call getUserUseCase');
+    return userRepository.getUsersApi();
   }
 }
