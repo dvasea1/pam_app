@@ -2,13 +2,12 @@ import 'package:domain/users/repository/user_repository.dart';
 
 import '../models/small_user.dart';
 
-class GetUsersUseCase {
+class GetUsersFromApiUseCase {
   final UserRepository userRepository;
 
-  GetUsersUseCase(this.userRepository);
+  GetUsersFromApiUseCase(this.userRepository);
 
-  Future<List<SmallUser>> call() {
-    print('call getUserUseCase');
-    return userRepository.getUsersApi();
+  Future<List<SmallUser>> call(int page, int limit) {
+    return userRepository.getUsersApi(page, limit);
   }
 }

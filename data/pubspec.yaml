@@ -11,6 +11,9 @@ dependencies:
     path: ../domain
   json_annotation:
   http:
+  #drift:
+  #sqlite3_flutter_libs: 0.5.4
+  #path_provider:
 #   path: ^1.8.0
 
 dev_dependencies:
@@ -18,3 +21,6 @@ dev_dependencies:
   test: ^1.16.0
   json_serializable:
   build_runner:
+  #drift_dev:
+
+

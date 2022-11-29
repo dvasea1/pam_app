@@ -1,4 +1,4 @@
-import 'package:data/users/entiy/user_api_dto.dart';
+import 'package:data/users/entiy/api/user_api_dto.dart';
 
 abstract class UserJsonAssetSource {
   Future<List<UserApiDto>> getUsers();

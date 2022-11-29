@@ -13,11 +13,23 @@ class UsersPage extends StatefulWidget {
 }
 
 class UsersPageState extends State<UsersPage> {
+  late ScrollController scrollController;
+
   @override
   void initState() {
+    scrollController = ScrollController();
+
     Get.put(UsersController());
     UsersController usersController = Get.find();
     usersController.getUsers();
+
+    scrollController.addListener(() {
+      var maxScroll = scrollController.position.maxScrollExtent;
+      var currentScroll = scrollController.position.pixels;
+      if (currentScroll >= maxScroll) {
+        usersController.getNexUsers();
+      }
+    });
     super.initState();
   }
 
@@ -33,6 +45,7 @@ class UsersPageState extends State<UsersPage> {
                   children: const [CircularProgressIndicator()],
                 )
               : ListView.builder(
+                  controller: scrollController,
                   itemBuilder: (context, index) {
                     var user = usersController.users[index];
                     return Container(
